@@ -3,6 +3,9 @@ package org.zhouhy.desing.model.md01.adapter;
 import org.zhouhy.desing.model.md01.adaptee.Adaptee;
 import org.zhouhy.desing.model.md01.target.Target;
 
+/**
+ * ÀàÊÊÅäÆ÷
+ * */
 public class Adapter extends Adaptee implements Target{
 
 	@Override
