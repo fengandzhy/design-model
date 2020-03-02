@@ -1,11 +1,14 @@
 package org.zhouhy.desing.model.md01;
 
-public class Client {
+import org.zhouhy.desing.model.md01.adapter.Adapter;
+import org.zhouhy.desing.model.md01.target.Target;
 
+public class Client {
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Target target = new Adapter();
+		target.targetMethond1();
+		target.targetMethod2();
 	}
 
 }
