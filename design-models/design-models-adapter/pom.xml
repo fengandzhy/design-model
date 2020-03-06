@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.zhouhy</groupId>
-		<artifactId>desing-models</artifactId>
+		<artifactId>design-models</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>desing-models-adapter</artifactId>
+	<artifactId>design-models-adapter</artifactId>
 </project>
