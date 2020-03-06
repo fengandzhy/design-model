@@ -1,7 +1,7 @@
-package org.zhouhy.desing.model.md01.adapter;
+package org.zhouhy.desing.model.adapter.md01.adapter;
 
-import org.zhouhy.desing.model.md01.adaptee.Adaptee;
-import org.zhouhy.desing.model.md01.target.Target;
+import org.zhouhy.desing.model.adapter.md01.adaptee.Adaptee;
+import org.zhouhy.desing.model.adapter.md01.target.Target;
 
 /**
  * ¿‡  ≈‰∆˜

@@ -1,4 +1,4 @@
-package org.zhouhy.desing.model.md02.adaptee;
+package org.zhouhy.desing.model.adapter.md02.adaptee;
 
 public class Adaptee {
 	
