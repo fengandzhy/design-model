@@ -9,12 +9,7 @@ public class LazySingleton {
 	}
 	
 	public static LazySingleton getInstance(){
-//		if (lazySingleton == null) {
-//			lazySingleton = new LazySingleton();
-//		}
-		if(lazySingleton!=null) {
-			
-		}else {
+		if(lazySingleton==null) {
 			try {
 				Thread.sleep(300);
 				lazySingleton = new LazySingleton();
