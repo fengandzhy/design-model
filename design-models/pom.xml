@@ -15,5 +15,8 @@
 	<modules>
 		<module>design-models-adapter</module>
 		<module>design-models-singleton</module>
-	</modules>
+        <module>design-models-simplefactory</module>
+		<module>design-models-abstractfactory</module>
+        <module>design-models-creator</module>
+    </modules>
 </project>
