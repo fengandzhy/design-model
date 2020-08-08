@@ -15,7 +15,7 @@ public class Adapter extends Target{
 	}
 
 	@Override
-	public void targetMethond1() {
+	public void targetMethod1() {
 		System.out.println("Adapter targetMethond1 invoked!");
 		adaptee.methodA();
 	}

@@ -7,7 +7,7 @@ public class Client {
 	
 	public static void main(String[] args) {
 		Target target = new Adapter();
-		target.targetMethond1();
+		target.targetMethod1();
 		target.targetMethod2();
 	}
 

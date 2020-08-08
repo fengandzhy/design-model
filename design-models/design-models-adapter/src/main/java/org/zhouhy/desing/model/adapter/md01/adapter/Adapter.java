@@ -9,7 +9,7 @@ import org.zhouhy.desing.model.adapter.md01.target.Target;
 public class Adapter extends Adaptee implements Target{
 
 	@Override
-	public void targetMethond1() {
+	public void targetMethod1() {
 		System.out.println("Adapter targetMethond1 invoked!");
 		methodA();
 	}
