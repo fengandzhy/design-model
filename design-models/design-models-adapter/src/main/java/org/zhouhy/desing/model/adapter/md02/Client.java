@@ -11,7 +11,6 @@ public class Client {
 		Target target = new Adapter(adaptee);
 		target.targetMethod1();
 		target.targetMethod2();
-
 	}
 
 }
