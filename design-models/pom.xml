@@ -18,5 +18,6 @@
         <module>design-models-simplefactory</module>
 		<module>design-models-abstractfactory</module>
         <module>design-models-creator</module>
+        <module>design-models-factorymethod</module>
     </modules>
 </project>
