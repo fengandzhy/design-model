@@ -5,6 +5,7 @@ public class MyThread extends Thread{
     @Override
     public void run() {
         System.out.println(MySingleton.getInstance().hashCode());
+        //System.out.println(MySingleton.getInstance());
     }
 
     public static void main(String[] args) {

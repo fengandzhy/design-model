@@ -1,6 +1,8 @@
 package org.zhouhy.design.model.sigleton.md04;
 
-public class MySingleton {
+
+
+public class MySingleton{
 
     private static class MySingletonHandler{
         private static MySingleton instance = new MySingleton();

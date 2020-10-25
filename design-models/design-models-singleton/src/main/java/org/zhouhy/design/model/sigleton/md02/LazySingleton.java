@@ -1,5 +1,8 @@
 package org.zhouhy.design.model.sigleton.md02;
 
+/**
+ * 懒汉式单例模式
+ * */
 public class LazySingleton {
 	
 	private static LazySingleton lazySingleton;

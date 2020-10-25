@@ -7,7 +7,9 @@ public class MySingleton {
 
         private MySingleton instance;
 
+        //只要调用了MyEnumSingleton.singletonFactory 就会立马执行这个构造器
         MyEnumSingleton(){//枚举类的构造方法在类加载是被实例化
+            System.out.println("It is here");
             instance = new MySingleton();
         }
 
@@ -16,6 +18,6 @@ public class MySingleton {
         }
     }
     public static MySingleton getInstance(){
-        return MySingleton.MyEnumSingleton.singletonFactory.getInstance();
+        return MyEnumSingleton.singletonFactory.getInstance();
     }
 }

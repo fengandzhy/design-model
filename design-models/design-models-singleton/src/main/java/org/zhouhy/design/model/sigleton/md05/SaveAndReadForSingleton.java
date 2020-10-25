@@ -25,7 +25,7 @@ public class SaveAndReadForSingleton {
         try {
             FileInputStream fis = new FileInputStream(file);
             ObjectInputStream ois = new ObjectInputStream(fis);
-            MySingleton rSingleton = (MySingleton) ois.readObject();
+            MySingleton rSingleton = (MySingleton) ois.readObject(); //这里实际上用了反射重新创建了一个对象
             fis.close();
             ois.close();
             System.out.println(rSingleton.hashCode());
