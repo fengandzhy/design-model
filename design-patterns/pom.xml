@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>design-patterns_simple-factory</module>
+        <module>design-pattern_factory</module>
     </modules>
     <packaging>pom</packaging>
 
