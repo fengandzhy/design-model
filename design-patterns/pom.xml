@@ -10,6 +10,7 @@
     <modules>
         <module>design-patterns_simple-factory</module>
         <module>design-pattern_factory</module>
+        <module>design-pattern_abstract-factory</module>
     </modules>
     <packaging>pom</packaging>
 
