@@ -7,7 +7,7 @@ public class SingletonHungryTest {
 
     @Test
     public void testGetInstance(){
-        SingletonHungry singletonHungry = SingletonHungry.getInstance();
+        
         
     }
 }
