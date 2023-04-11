@@ -1,20 +1,13 @@
 package org.frank.design.pattern.singleton.hungry;
 
 public class SingletonHungry {
-    private static volatile SingletonHungry singletonHungry;
+    private static volatile SingletonHungry singletonHungry = new SingletonHungry();
     
     private SingletonHungry(){
         
     }
     
-    public static SingletonHungry getInstance(){
-        if(singletonHungry == null){
-            synchronized (SingletonHungry.class){
-                if(singletonHungry == null){
-                    singletonHungry = new SingletonHungry();                    
-                }
-            }            
-        }
+    public static SingletonHungry getInstance(){        
         return singletonHungry;
     }
 }
