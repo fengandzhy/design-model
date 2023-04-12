@@ -4,9 +4,12 @@ import org.frank.design.pattern.singleton.enums.SingletonClassEnum;
 import org.frank.design.pattern.singleton.hungry.SingletonHungry;
 import org.frank.design.pattern.singleton.lazy.demo01.SingletonLazy;
 import org.frank.design.pattern.singleton.lazy.demo02.SingletonLazyThreadUnsafe;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class MyThread extends Thread{
 
+    private static final Logger logger = LoggerFactory.getLogger(MyThread.class);
     private SingletonClassEnum singletonClassEnum;
     
     public MyThread(SingletonClassEnum singletonClassEnum){
@@ -17,13 +20,13 @@ public class MyThread extends Thread{
     public void run() {
         switch (singletonClassEnum){
             case SINGLETON_LAZY:
-                System.out.println(SingletonLazy.getInstance().hashCode());
+                logger.info("SingletonLazy:"+SingletonLazy.getInstance().hashCode());
                 break;                
             case SINGLETON_HUNGRY:
-                System.out.println(SingletonHungry.getInstance().hashCode());
+                logger.info("SingletonHungry:"+SingletonHungry.getInstance().hashCode());
                 break;
             case SINGLETON_LAZY_UNSAFE:
-                System.out.println(SingletonLazyThreadUnsafe.getInstance().hashCode());
+                logger.info("SingletonLazyThreadUnsafe:"+SingletonLazyThreadUnsafe.getInstance().hashCode());
                 break;
             default:
                 throw new RuntimeException("No such class");
