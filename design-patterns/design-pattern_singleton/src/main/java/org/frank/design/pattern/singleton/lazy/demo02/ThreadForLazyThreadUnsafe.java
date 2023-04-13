@@ -5,13 +5,13 @@ import org.slf4j.LoggerFactory;
 
 import java.util.HashSet;
 
-public class TestThreadForLazyThreadUnsafe extends Thread{
+public class ThreadForLazyThreadUnsafe extends Thread{
 
-    private static final Logger logger = LoggerFactory.getLogger(TestThreadForLazyThreadUnsafe.class);
+    private static final Logger logger = LoggerFactory.getLogger(ThreadForLazyThreadUnsafe.class);
     private HashSet<Integer> hashCodeSet;
 
 
-    public TestThreadForLazyThreadUnsafe(HashSet<Integer> hashCodeSet){
+    public ThreadForLazyThreadUnsafe(HashSet<Integer> hashCodeSet){
         this.hashCodeSet = hashCodeSet;
     }
 
