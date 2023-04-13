@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.HashSet;
+import java.util.concurrent.CountDownLatch;
 
 public class TestSingletonLazyThreadSafe {
 
@@ -16,16 +17,15 @@ public class TestSingletonLazyThreadSafe {
     
     public static void testMultiThread() throws InterruptedException {
         HashSet<Integer> hashCodeSet = new HashSet<>();
+        final CountDownLatch countDownLatch = new CountDownLatch(100);
         ThreadForLazyThreadSafe[] threadForLazyThreadSafeArray = new ThreadForLazyThreadSafe[100];
         for(int i =0; i < 100; i++){
-            threadForLazyThreadSafeArray[i] = new ThreadForLazyThreadSafe(hashCodeSet);
+            threadForLazyThreadSafeArray[i] = new ThreadForLazyThreadSafe(hashCodeSet,countDownLatch);
         }
         for(int i =0; i < 100; i++){
             threadForLazyThreadSafeArray[i].start();
         }
-        for(int i =0; i < 100; i++){
-            threadForLazyThreadSafeArray[i].join(); // 把threadForLazyThreadUnsafeArray[i]加入当前线程 
-        }
+        countDownLatch.await();
         for (Integer x : hashCodeSet) {
             logger.info(String.valueOf(x));
         }
