@@ -9,20 +9,25 @@ public class TestSingletonLazyThreadUnsafe {
     
     private static final Logger logger = LoggerFactory.getLogger(TestSingletonLazyThreadUnsafe.class);
     
+    
     public static void main(String[] args) throws InterruptedException {
+        testMultiThread();
+    }
+
+    public static void testMultiThread() throws InterruptedException {
         HashSet<Integer> hashCodeSet = new HashSet<>();
         ThreadForLazyThreadUnsafe[] threadForLazyThreadUnsafeArray = new ThreadForLazyThreadUnsafe[100];
-        for(int i =0; i < 100; i++){
+        for(int i =0; i < 100; i++) {
             threadForLazyThreadUnsafeArray[i] = new ThreadForLazyThreadUnsafe(hashCodeSet);
         }
         for(int i =0; i < 100; i++){
             threadForLazyThreadUnsafeArray[i].start();
         }
         for(int i =0; i < 100; i++){
-            threadForLazyThreadUnsafeArray[i].join(); // 把threadForLazyThreadUnsafeArray[i]加入当前线程 
+            threadForLazyThreadUnsafeArray[i].join();
         }
-        hashCodeSet.stream().forEach((x) -> {
-           logger.info(String.valueOf(x)); 
-        });
+        for (Integer x : hashCodeSet) {
+            logger.info(String.valueOf(x));
+        }
     }
 }
