@@ -3,12 +3,12 @@ package org.frank.design.pattern.singleton.hungry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class TestThreadForHungry extends Thread{
+public class ThreadForHungry extends Thread{
 
-    private static final Logger logger = LoggerFactory.getLogger(TestThreadForHungry.class);
+    private static final Logger logger = LoggerFactory.getLogger(ThreadForHungry.class);
     
     
-    public TestThreadForHungry(){        
+    public ThreadForHungry(){        
     }
     
     @Override
