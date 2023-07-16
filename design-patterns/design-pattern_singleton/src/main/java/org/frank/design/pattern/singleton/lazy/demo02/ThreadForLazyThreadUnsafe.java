@@ -10,6 +10,7 @@ public class ThreadForLazyThreadUnsafe extends Thread{
 
     private static final Logger logger = LoggerFactory.getLogger(ThreadForLazyThreadUnsafe.class);
     private final HashSet<Integer> hashCodeSet;
+    
 
     public ThreadForLazyThreadUnsafe(HashSet<Integer> hashCodeSet){
         this.hashCodeSet = hashCodeSet;
