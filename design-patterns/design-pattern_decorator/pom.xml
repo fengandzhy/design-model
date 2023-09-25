@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>org.frank</groupId>
-    <artifactId>design-pattern_decrorator</artifactId>
+    <artifactId>design-pattern_decorator</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

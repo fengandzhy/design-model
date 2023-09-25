@@ -15,7 +15,7 @@
         <module>design-pattern_observer</module>
         <module>design-pattern_strategy</module>
         <module>design-pattern_responsibility_chain</module>
-        <module>design-pattern_decrorator</module>
+        <module>design-pattern_decorator</module>
     </modules>
     <packaging>pom</packaging>
 
