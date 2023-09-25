@@ -12,6 +12,7 @@
         <module>design-pattern_factory</module>
         <module>design-pattern_abstract-factory</module>
         <module>design-pattern_singleton</module>
+        <module>design-pattern_observer</module>
     </modules>
     <packaging>pom</packaging>
 
