@@ -12,11 +12,16 @@ public class ChainPatternDemo {
         LoggerHandler fileLogger = new FileLoggerHandler(LoggerHandler.DEBUG);
         LoggerHandler consoleLogger = new ConsoleLoggerHandler(LoggerHandler.INFO);
         
-        
+        consoleLogger.setNextLoggerHandler(fileLogger);
+        fileLogger.setNextLoggerHandler(errorLogger);
         return consoleLogger;
     }
     
     public static void main(String[] args) {
-        
+        LoggerHandler loggerChain = getChainLoggers();
+
+        loggerChain.logMessage(LoggerHandler.INFO, "This is an information.");
+        loggerChain.logMessage(LoggerHandler.DEBUG, "This is a debug level information.");
+        loggerChain.logMessage(LoggerHandler.ERROR, "This is an error information.");
     }
 }
