@@ -1,4 +1,4 @@
-package org.frank.design.pattern.responsibility.chain.demo01;
+package org.frank.design.pattern.responsibility.chain.demo01.handler;
 
 public abstract class DiscountHandler {
     protected DiscountHandler successor; // 后继处理器

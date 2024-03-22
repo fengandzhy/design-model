@@ -1,6 +1,8 @@
-package org.frank.design.pattern.responsibility.chain.demo01;
+package org.frank.design.pattern.responsibility.chain.demo01.handler.impl;
 
-public class VIPDiscountHandler extends DiscountHandler{
+import org.frank.design.pattern.responsibility.chain.demo01.handler.DiscountHandler;
+
+public class VIPDiscountHandler extends DiscountHandler {
     @Override
     public double applyDiscount(double purchaseAmount) {
         // 如果订单金额在一定范围内，则应用折扣
