@@ -10,10 +10,7 @@ public class VIPDiscountHandler extends DiscountHandler {
             return purchaseAmount * 0.9; // 10% 折扣
         } else {
             // 无法处理请求，传递给下一个处理器
-            if (successor != null) {
-                return successor.applyDiscount(purchaseAmount);
-            }
-            return purchaseAmount;
+            return super.applyDiscount(purchaseAmount);
         }
     }
 }

@@ -7,5 +7,10 @@ public abstract class DiscountHandler {
         this.successor = successor;
     }
 
-    public abstract double applyDiscount(double purchaseAmount);
+    public double applyDiscount(double purchaseAmount) {
+        if (successor != null) {
+            return successor.applyDiscount(purchaseAmount);
+        }
+        return purchaseAmount;
+    }
 }
