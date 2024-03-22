@@ -17,6 +17,7 @@
         <module>design-pattern_responsibility_chain</module>
         <module>design-pattern_decorator</module>
         <module>design-pattern_template</module>
+        <module>design-pattern_flyweight</module>
     </modules>
     <packaging>pom</packaging>
 
