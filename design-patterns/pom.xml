@@ -20,6 +20,7 @@
         <module>design-pattern_flyweight</module>
         <module>design-pattern_adapter</module>
         <module>design-pattern_iterator</module>
+        <module>design-pattern_bridge</module>
     </modules>
     <packaging>pom</packaging>
 
