@@ -22,6 +22,7 @@
         <module>design-pattern_iterator</module>
         <module>design-pattern_bridge</module>
         <module>design-pattern_command</module>
+        <module>design-pattern_mediator</module>
     </modules>
     <packaging>pom</packaging>
 
