@@ -18,6 +18,7 @@
         <module>design-pattern_decorator</module>
         <module>design-pattern_template</module>
         <module>design-pattern_flyweight</module>
+        <module>design-pattern_adapter</module>
     </modules>
     <packaging>pom</packaging>
 
